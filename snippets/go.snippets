@@ -1,0 +1,15 @@
+snippet v "shorthand variable declaration"
+	${1} := ${2}
+
+snippet vr "variable initialization"
+	var ${1:t} ${0:string}
+
+snippet pkg "package"
+	package ${1:main}
+
+snippet test "test function"
+	func Test${1:name}(t *testing.T) {
+		${0:${VISUAL}}
+	}
+snippet jsont "json tag"
+	\`json:"${0}"\`
