@@ -2,3 +2,8 @@ snippet rsc "terraform resource"
 	resource "${1:resource}" "${2:name}" {
 		${0}
 	}
+
+snippet iamp "iam policy document"
+	data "aws_iam_policy_document" "${1:dataname}" {
+		${0}
+	}
