@@ -17,9 +17,9 @@ snippet jsont "json tag"
 
 snippet iferr "error handling template"
 	if err != nil {
-		${0:log.Fatalf()}
+		${0:log.Fatal(err)}
 	}
 snippet iferrone "error handling template when only error return"
 	if err := ${1:app.Run(os.Args)}; err != nil {
-		${2}
+		${2:log.Fatal(err)}
 	}
