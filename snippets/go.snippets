@@ -14,3 +14,12 @@ snippet test "test function"
 
 snippet jsont "json tag"
 	${1:Name} ${2:type}\`json:"${0:name}"\`
+
+snippet iferr "error handling template"
+	if err != nil {
+		${0:log.Fatalf()}
+	}
+snippet iferrone "error handling template when only error return"
+	if err := ${1:app.Run(os.Args)}; err != nil {
+		${2}
+	}
