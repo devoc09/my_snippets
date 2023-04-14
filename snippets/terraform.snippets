@@ -7,3 +7,10 @@ snippet iamp "iam policy document"
 	data "aws_iam_policy_document" "${1:dataname}" {
 		${0}
 	}
+
+snippet var "terraform variable"
+	variable "${1:name}" {${0}}
+
+snippet obj "object"
+	object({})
+
