@@ -23,3 +23,5 @@ snippet iferrone "error handling template when only error return"
 	if err := ${1:app.Run(os.Args)}; err != nil {
 		${2:log.Fatal(err)}
 	}
+snippet cbac "insert context.Background()"
+	context.Background()
