@@ -4,7 +4,7 @@ snippet v "shorthand variable declaration"
 snippet vr "variable initialization"
 	var ${1:t} ${0:string}
 
-snippet pkg "package"
+snippet pkg "package" A
 	package ${1:main}
 
 snippet test "test function"
@@ -12,14 +12,14 @@ snippet test "test function"
 		${0:${VISUAL}}
 	}
 
-snippet jsont "json tag"
+snippet jsont "json tag" A
 	${1:Name} ${2:type}\`json:"${0:name}"\`
 
-snippet iferr "error handling template"
+snippet iferr "error handling template" A
 	if err != nil {
 		${0:log.Fatal(err)}
 	}
-snippet iferrone "error handling template when only error return"
+snippet iferrone "error handling template when only error return" A
 	if err := ${1:app.Run(os.Args)}; err != nil {
 		${2:log.Fatal(err)}
 	}
